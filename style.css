@@ -1,0 +1,16 @@
+.custom-card.bg-pink {
+    background-color: rgb(232, 207, 211);
+  }
+
+  /* .container{
+    background-color: rgb(232, 207, 211);
+  }
+   */
+  .custom-card.bg-matte {
+    background-color: #c5c1c1; /* This is just an example color, you can adjust it as needed */
+  }
+  
+  .custom-card.bg-blue {
+    background-color: #b4c4d1;
+  }
+

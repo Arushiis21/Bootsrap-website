@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <title>Bootstrap Template Design</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand">CodeQuarry </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link  active " href="/about.html">About</a>
+          </li>
+          
+          <li class="nav-item active">
+            <a class="nav-link  active" href="/dropdown.html">Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/blog.html">Blog</a>
+          </li>
+
+
+          <li class="nav-item active">
+            <a class="nav-link  active" href="/contact.html">Contact us</a>
+          </li>
+        </ul>
+        <div class="mx-2">
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</button>
+          
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            GET STARTED
+          </button>
+        
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!--  Sign in Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginLabel">Login to CodeQuarry </h5>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary">LOGIN</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Get Started Button -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">User Register Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="container form-container mt-5">
+          <div class="row">
+              <!-- Signup Form Column -->
+              <div class="col-md-6">
+                  <form>
+                      <!-- Full Name -->
+                      <div class="mb-3">
+                          <label for="fullName" class="form-label">Full Name</label>
+                          <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                      </div>
+                      <!-- Username -->
+                      <div class="mb-3">
+                          <label for="username" class="form-label">Username</label>
+                          <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
+                      </div>
+                      <!-- Password -->
+                      <div class="mb-3">
+                          <label for="password" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                      </div>
+                      <!-- Submit Button -->
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+              </div>
+              <!-- Second Column for Additional Fields and Checkbox -->
+              <div class="col-md-6">
+                  <!-- Email -->
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                  </div>
+                  <!-- Mobile Number -->
+                  <div class="mb-3">
+                      <label for="mobileNumber" class="form-label">Mobile Number</label>
+                      <input type="tel" class="form-control" id="mobileNumber" placeholder="Enter your mobile number" required>
+                  </div>
+                  <!-- Confirm Password -->
+                  <div class="mb-3">
+                      <label for="confirmPassword" class="form-label">Confirm Password</label>
+                      <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+                  </div>
+              </div>
+              <!-- Checkbox -->
+              <div class="col-md-12">
+                  <div class="form-check"  style="margin-top: 9px;">
+                      <input type="checkbox" class="form-check-input" id="agreeCheckbox" required>
+                      <label class="form-check-label" for="agreeCheckbox">I agree to our Terms & Conditions, Visitors Agreement, and Privacy Policy</label>
+                  </div>
+                  <p class="mt-3">Already a member? <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Login here</a></p>
+              </div>
+          </div>
+      </div>
+      
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!---Casoural part--->
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/Welcome to CodeQuarry.jpg" class="d-block w-100" alt="..." style="height: 800px; width: 100%;">
+      </div>
+    </div>
+  </div>
+
+     <div class="container form-container mt-5 ml-3 mr-3"> <!-- Added margin from top, left, and right -->
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <!-- CARD1-->
+          <div class="col">
+              <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="img/wd65.jpg"> <!-- Adjusted image height -->
+                  <div class="card-body">
+                      <p class="card-text">Let's explore all aspects of responsive designs, learning how to make sites that look great and work well for everyone.</p>
+                      <a href="#">Search more</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- CARD2 -->
+          <div class="col">
+              <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="img/wdeign56.png"> <!-- Adjusted image height -->
+                  <div class="card-body">
+                      <p class="card-text">Web deLOG INg is the process of planning, conceptualizing, and implementing the plan for deLOG INg a website in a way that is functional.</p>
+                      <a href="#">Search more</a>
+                  </div>
+              </div>
+          </div>
+         
+          <!---Card start 3-->
+    <div class="col">
+      <div class="card shadow-sm">
+        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/Ai65.jpg">
+        <div class="card-body">
+          <p class="card-text">Artificial intelligence is the intelligence of machines or software,
+            as opposed to the intelligence of human beings or animals./p>
+
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#"> Search more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---Card start4-->
+    <div class="col">
+      <div class="card shadow-sm">
+        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/dg56.png">
+        <div class="card-body">
+          <p class="card-text">
+            Digital marketing, also called online marketing, is the promotion of brands to connect
+            with potential customers using the internet and other forms of digital communication.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#"> Search more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---Card start 5-->
+    <div class="col">
+      <div class="card shadow-sm">
+        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/ga65.png">
+        <div class="card-body">
+          <p class="card-text">Google Ads is an online advertising platform developed by Google,
+            where advertisers bid to display brief advertisements, service offerings, product listings
+            , and videos to web users. </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#"> Search more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Cardsstart 6 -->
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/cy65.jpg">
+        <div class="card-body">
+          <p class="card-text">Cyber security is the practice of defending computers, servers,networks,
+            and data from malicious attacks. It's also known as information technology security or electronic
+            information security. </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#"> Search more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Cardsstart 7-->
+    <div class="col">
+      <div class="card shadow-sm">
+        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/ds56.jpg">
+        <div class="card-body">
+          <p class="card-text">Data scientists are often expected to form their own questions about
+            the data, while data analysts might support teams that already have set goals in mind. ,
+            you should acquire a strong foundation in mathematics, statistics, and programming. </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#"> Search more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Cardsstart 8 -->
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/pm56.jpg">
+        <div class="card-body">
+          <p class="card-text">A project manager is a professional who organises, plans, and executes projects
+            while
+            working within restraints like budgets and schedules. Project managers are in charge of leading teams
+            , defining goals & seeing a project through to its closure. </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#"> Search more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---Card start 9-->
+    <div class="col">
+      <div class="card shadow-sm">
+        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="img/md56.jpg">
+        <div class="card-body">
+          <p class="card-text">Mobile app development is the process by which a
+            mobile app is developed for one or more mobile devices,
+            which can include personal digital assistants, enterprise digital assistants, or mobile phones.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#"> Search more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+  
+
+
+
+
+  <!--Footer -->
+  <div class="container">
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img class="mb-2" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
+          <small class="d-block mb-3 text-muted">© 2017–2021</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  </div>
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script src="assets/jquery//jquery.js"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+</body>
+
+</html>
